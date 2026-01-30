@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyTypeTodo Support</title>
+  <meta name="description" content="MyTypeTodo support page: contact, FAQ, troubleshooting, and legal links." />
+  <style>
+    :root { --fg:#0f172a; --muted:#475569; --bg:#ffffff; --card:#f8fafc; --border:#e2e8f0; }
+    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+      color:var(--fg); background:var(--bg); }
+    a { color:inherit; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px; }
+    header { padding: 18px 0 8px; }
+    h1 { margin:0; font-size: 28px; }
+    p { color: var(--muted); line-height: 1.7; }
+    .row { display:flex; gap:10px; flex-wrap:wrap; margin-top: 10px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding: 10px 12px; border-radius:12px; border:1px solid var(--border); background:var(--card); text-decoration:none; font-weight:600; }
+    .card { margin-top: 14px; border:1px solid var(--border); border-radius:16px; overflow:hidden; background:#fff; }
+    .inner { padding: 16px; }
+    h2 { margin:0; font-size: 17px; }
+    ul { margin: 10px 0 0; padding-left: 18px; color: var(--muted); line-height: 1.7; }
+    .faq dt { margin-top: 12px; font-weight: 700; }
+    .faq dd { margin: 6px 0 0; color: var(--muted); }
+    .shots { display:grid; grid-template-columns: 1fr; gap:12px; margin-top:12px; }
+    .shot { border:1px solid var(--border); border-radius:14px; overflow:hidden; background:#fff; }
+    .shot img { width:100%; height:auto; display:block; }
+    .cap { padding: 10px 12px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); background: #fff; }
+    footer { margin-top: 22px; padding-top: 16px; border-top:1px solid var(--border); color:var(--muted); font-size: 13px; display:flex; gap:12px; flex-wrap:wrap; justify-content:space-between; }
+    @media (min-width: 860px) {
+      .shots { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>MyTypeTodo Support</h1>
+      <p>
+        お困りごとはここから。よくある質問、トラブルシューティング、問い合わせ先をまとめています。
+      </p>
+      <div class="row">
+        <a class="btn" href="https://dutodoapp08.github.io/MyTypeTodo-marketing/">← マーケティングページへ</a>
+        <a class="btn" href="https://dutodoapp08.github.io/MyTypeTodo-legal/">利用規約 / プライバシー</a>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="inner">
+        <h2>お問い合わせ</h2>
+        <p>
+          一番確実なのはGoogle Formです（あなたが前に言っていた方針に合わせています）。<br/>
+          下のURLをあなたのフォームURLに差し替えてください。
+        </p>
+        <div class="row">
+          <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd4mBrqdKwNUb-MDuC6LszZ7whN5irOgoBu9UAdJcjyadigLQ/viewform?usp=dialog" target="_blank" rel="noopener">Google Formで問い合わせ</a>
+        </div>
+        <ul>
+          <li>返信目安：通常 1〜3営業日（目安）</li>
+          <li>不具合報告は「端末」「iOSバージョン」「再現手順」があると早いです</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="inner">
+        <h2>よくある質問（FAQ）</h2>
+        <dl class="faq">
+          <dt>Q. MBTIはアプリ内で診断してくれますか？</dt>
+          <dd>A. 簡易テスト/選択フローを用意しています（将来変更される場合があります）。医療・診断目的のアプリではありません。</dd>
+
+          <dt>Q. サブスクリプションの解約はどこでできますか？</dt>
+          <dd>A. iPhoneの「設定」→「Apple ID」→「サブスクリプション」から解約できます（App Storeの仕様です）。</dd>
+
+          <dt>Q. データはどこに保存されますか？</dt>
+          <dd>A. 現状の設計がローカル保存中心なら、その旨をプライバシーポリシーに合わせて記載してください（クラウド同期がある場合も同様）。</dd>
+
+          <dt>Q. 不具合が起きました。何を送ればいいですか？</dt>
+          <dd>A. 画面のスクリーンショット、発生タイミング、再現手順、端末/iOSバージョンがあると助かります。</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="inner">
+        <h2>画面イメージ</h2>
+        <p>「どの画面で困っているか」を伝えるのに役立つので、参考として載せておきます。</p>
+        <div class="shots">
+          <div class="shot">
+            <img src="1_1_choose_mbti.png" alt="Choose MBTI screen" />
+            <div class="cap">MBTI選択</div>
+          </div>
+          <div class="shot">
+            <img src="1_2_mbti_test.png" alt="MBTI test screen" />
+            <div class="cap">MBTIテスト</div>
+          </div>
+          <div class="shot">
+            <img src="3_no_task.png" alt="No task screen" />
+            <div class="cap">タスクなし</div>
+          </div>
+          <div class="shot">
+            <img src="5_hurikaeri.png" alt="Review screen" />
+            <div class="cap">ふりかえり</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© 2026 MyTypeTodo</div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="https://dutodoapp08.github.io/MyTypeTodo-marketing/">Marketing</a>
+        <a href="https://dutodoapp08.github.io/MyTypeTodo-legal/">Legal</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
